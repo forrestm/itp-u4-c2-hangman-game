@@ -23,10 +23,14 @@ def _uncover_word(answer_word, masked_word, character):
         raise InvalidGuessedLetterException
     elif len(answer_word) != len(masked_word):
         raise InvalidWordException
-
+    for order, letter in answer_word:
+        if letter == character:
+            new_masked_word = answer_word.replace(letter, )
+            
+        
 
 def guess_letter(game, letter):
-    pass
+    
 
 
 def start_new_game(list_of_words=None, number_of_guesses=5):
